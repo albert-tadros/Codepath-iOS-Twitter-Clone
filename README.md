@@ -25,4 +25,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![twetify_part1](https://user-images.githubusercontent.com/78925894/158009282-ee57ce43-852a-47e9-a82c-af7d8dab9147.gif)
