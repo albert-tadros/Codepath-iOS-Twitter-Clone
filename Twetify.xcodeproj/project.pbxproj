@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A77B6D927DBE1B300FC6004 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A77B6D827DBE1B300FC6004 /* HomeTableViewController.swift */; };
+		6A8BFF0D27DA88DF0069D196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BFF0C27DA88DF0069D196 /* AppDelegate.swift */; };
+		6A8BFF0F27DA88DF0069D196 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BFF0E27DA88DF0069D196 /* SceneDelegate.swift */; };
+		6A8BFF1127DA88DF0069D196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BFF1027DA88DF0069D196 /* ViewController.swift */; };
+		6A8BFF1427DA88DF0069D196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8BFF1227DA88DF0069D196 /* Main.storyboard */; };
+		6A8BFF1627DA88E00069D196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8BFF1527DA88E00069D196 /* Assets.xcassets */; };
+		6A8BFF1927DA88E00069D196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8BFF1727DA88E00069D196 /* LaunchScreen.storyboard */; };
+		6A8BFF2427DA88E00069D196 /* TwetifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BFF2327DA88E00069D196 /* TwetifyTests.swift */; };
+		6A8BFF2E27DA88E00069D196 /* TwetifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BFF2D27DA88E00069D196 /* TwetifyUITests.swift */; };
+		6A8BFF3027DA88E00069D196 /* TwetifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BFF2F27DA88E00069D196 /* TwetifyUITestsLaunchTests.swift */; };
+		6ABCD3B727DC5E140070748B /* TweetCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABCD3B627DC5E140070748B /* TweetCellTableViewCell.swift */; };
+		6AF5DC5F27DB275D00BAFA9F /* TwitterAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5DC5E27DB275D00BAFA9F /* TwitterAPICaller.swift */; };
+		6AF5DC6127DB2A4500BAFA9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5DC6027DB2A4500BAFA9F /* LoginViewController.swift */; };
+		DD419F036FF89BA6B0AB35CA /* Pods_Twetify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F5E3EE5572236FB9C646FC /* Pods_Twetify.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A8BFF2027DA88E00069D196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8BFF0127DA88DF0069D196 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A8BFF0827DA88DF0069D196;
+			remoteInfo = Twetify;
+		};
+		6A8BFF2A27DA88E00069D196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8BFF0127DA88DF0069D196 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A8BFF0827DA88DF0069D196;
+			remoteInfo = Twetify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28BEB90FB567D4EC1BCBCBB8 /* Pods-Twetify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twetify.release.xcconfig"; path = "Target Support Files/Pods-Twetify/Pods-Twetify.release.xcconfig"; sourceTree = "<group>"; };
+		6A77B6D827DBE1B300FC6004 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		6A8BFF0927DA88DF0069D196 /* Twetify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twetify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8BFF0C27DA88DF0069D196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A8BFF0E27DA88DF0069D196 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6A8BFF1027DA88DF0069D196 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A8BFF1327DA88DF0069D196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A8BFF1527DA88E00069D196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A8BFF1827DA88E00069D196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A8BFF1A27DA88E00069D196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A8BFF1F27DA88E00069D196 /* TwetifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwetifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8BFF2327DA88E00069D196 /* TwetifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwetifyTests.swift; sourceTree = "<group>"; };
+		6A8BFF2927DA88E00069D196 /* TwetifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwetifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8BFF2D27DA88E00069D196 /* TwetifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwetifyUITests.swift; sourceTree = "<group>"; };
+		6A8BFF2F27DA88E00069D196 /* TwetifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwetifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6ABCD3B627DC5E140070748B /* TweetCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellTableViewCell.swift; sourceTree = "<group>"; };
+		6AF5DC5E27DB275D00BAFA9F /* TwitterAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICaller.swift; sourceTree = "<group>"; };
+		6AF5DC6027DB2A4500BAFA9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7322090A2104511E5493D142 /* Pods-Twetify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twetify.debug.xcconfig"; path = "Target Support Files/Pods-Twetify/Pods-Twetify.debug.xcconfig"; sourceTree = "<group>"; };
+		D4F5E3EE5572236FB9C646FC /* Pods_Twetify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twetify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A8BFF0627DA88DF0069D196 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD419F036FF89BA6B0AB35CA /* Pods_Twetify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8BFF1C27DA88E00069D196 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8BFF2627DA88E00069D196 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06D6FBB3B3206FB461BFB204 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7322090A2104511E5493D142 /* Pods-Twetify.debug.xcconfig */,
+				28BEB90FB567D4EC1BCBCBB8 /* Pods-Twetify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A8BFF0027DA88DF0069D196 = {
+			isa = PBXGroup;
+			children = (
+				6A8BFF0B27DA88DF0069D196 /* Twetify */,
+				6A8BFF2227DA88E00069D196 /* TwetifyTests */,
+				6A8BFF2C27DA88E00069D196 /* TwetifyUITests */,
+				6A8BFF0A27DA88DF0069D196 /* Products */,
+				06D6FBB3B3206FB461BFB204 /* Pods */,
+				833367AF92F50FBA79680FFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A8BFF0A27DA88DF0069D196 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A8BFF0927DA88DF0069D196 /* Twetify.app */,
+				6A8BFF1F27DA88E00069D196 /* TwetifyTests.xctest */,
+				6A8BFF2927DA88E00069D196 /* TwetifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A8BFF0B27DA88DF0069D196 /* Twetify */ = {
+			isa = PBXGroup;
+			children = (
+				6A8BFF0C27DA88DF0069D196 /* AppDelegate.swift */,
+				6AF5DC5E27DB275D00BAFA9F /* TwitterAPICaller.swift */,
+				6A8BFF0E27DA88DF0069D196 /* SceneDelegate.swift */,
+				6A8BFF1027DA88DF0069D196 /* ViewController.swift */,
+				6A8BFF1227DA88DF0069D196 /* Main.storyboard */,
+				6A77B6D827DBE1B300FC6004 /* HomeTableViewController.swift */,
+				6ABCD3B627DC5E140070748B /* TweetCellTableViewCell.swift */,
+				6AF5DC6027DB2A4500BAFA9F /* LoginViewController.swift */,
+				6A8BFF1527DA88E00069D196 /* Assets.xcassets */,
+				6A8BFF1727DA88E00069D196 /* LaunchScreen.storyboard */,
+				6A8BFF1A27DA88E00069D196 /* Info.plist */,
+			);
+			path = Twetify;
+			sourceTree = "<group>";
+		};
+		6A8BFF2227DA88E00069D196 /* TwetifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A8BFF2327DA88E00069D196 /* TwetifyTests.swift */,
+			);
+			path = TwetifyTests;
+			sourceTree = "<group>";
+		};
+		6A8BFF2C27DA88E00069D196 /* TwetifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A8BFF2D27DA88E00069D196 /* TwetifyUITests.swift */,
+				6A8BFF2F27DA88E00069D196 /* TwetifyUITestsLaunchTests.swift */,
+			);
+			path = TwetifyUITests;
+			sourceTree = "<group>";
+		};
+		833367AF92F50FBA79680FFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4F5E3EE5572236FB9C646FC /* Pods_Twetify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A8BFF0827DA88DF0069D196 /* Twetify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8BFF3327DA88E00069D196 /* Build configuration list for PBXNativeTarget "Twetify" */;
+			buildPhases = (
+				F6FB7774A9BE35960D7E9217 /* [CP] Check Pods Manifest.lock */,
+				6A8BFF0527DA88DF0069D196 /* Sources */,
+				6A8BFF0627DA88DF0069D196 /* Frameworks */,
+				6A8BFF0727DA88DF0069D196 /* Resources */,
+				977F2D1D1141E90B1D0AFD16 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Twetify;
+			productName = Twetify;
+			productReference = 6A8BFF0927DA88DF0069D196 /* Twetify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A8BFF1E27DA88E00069D196 /* TwetifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8BFF3627DA88E00069D196 /* Build configuration list for PBXNativeTarget "TwetifyTests" */;
+			buildPhases = (
+				6A8BFF1B27DA88E00069D196 /* Sources */,
+				6A8BFF1C27DA88E00069D196 /* Frameworks */,
+				6A8BFF1D27DA88E00069D196 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A8BFF2127DA88E00069D196 /* PBXTargetDependency */,
+			);
+			name = TwetifyTests;
+			productName = TwetifyTests;
+			productReference = 6A8BFF1F27DA88E00069D196 /* TwetifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A8BFF2827DA88E00069D196 /* TwetifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8BFF3927DA88E00069D196 /* Build configuration list for PBXNativeTarget "TwetifyUITests" */;
+			buildPhases = (
+				6A8BFF2527DA88E00069D196 /* Sources */,
+				6A8BFF2627DA88E00069D196 /* Frameworks */,
+				6A8BFF2727DA88E00069D196 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A8BFF2B27DA88E00069D196 /* PBXTargetDependency */,
+			);
+			name = TwetifyUITests;
+			productName = TwetifyUITests;
+			productReference = 6A8BFF2927DA88E00069D196 /* TwetifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A8BFF0127DA88DF0069D196 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6A8BFF0827DA88DF0069D196 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6A8BFF1E27DA88E00069D196 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6A8BFF0827DA88DF0069D196;
+					};
+					6A8BFF2827DA88E00069D196 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6A8BFF0827DA88DF0069D196;
+					};
+				};
+			};
+			buildConfigurationList = 6A8BFF0427DA88DF0069D196 /* Build configuration list for PBXProject "Twetify" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A8BFF0027DA88DF0069D196;
+			productRefGroup = 6A8BFF0A27DA88DF0069D196 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A8BFF0827DA88DF0069D196 /* Twetify */,
+				6A8BFF1E27DA88E00069D196 /* TwetifyTests */,
+				6A8BFF2827DA88E00069D196 /* TwetifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A8BFF0727DA88DF0069D196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8BFF1927DA88E00069D196 /* LaunchScreen.storyboard in Resources */,
+				6A8BFF1627DA88E00069D196 /* Assets.xcassets in Resources */,
+				6A8BFF1427DA88DF0069D196 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8BFF1D27DA88E00069D196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8BFF2727DA88E00069D196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		977F2D1D1141E90B1D0AFD16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twetify/Pods-Twetify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twetify/Pods-Twetify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Twetify/Pods-Twetify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6FB7774A9BE35960D7E9217 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twetify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A8BFF0527DA88DF0069D196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A77B6D927DBE1B300FC6004 /* HomeTableViewController.swift in Sources */,
+				6ABCD3B727DC5E140070748B /* TweetCellTableViewCell.swift in Sources */,
+				6A8BFF1127DA88DF0069D196 /* ViewController.swift in Sources */,
+				6AF5DC5F27DB275D00BAFA9F /* TwitterAPICaller.swift in Sources */,
+				6A8BFF0D27DA88DF0069D196 /* AppDelegate.swift in Sources */,
+				6AF5DC6127DB2A4500BAFA9F /* LoginViewController.swift in Sources */,
+				6A8BFF0F27DA88DF0069D196 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8BFF1B27DA88E00069D196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8BFF2427DA88E00069D196 /* TwetifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8BFF2527DA88E00069D196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8BFF2E27DA88E00069D196 /* TwetifyUITests.swift in Sources */,
+				6A8BFF3027DA88E00069D196 /* TwetifyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A8BFF2127DA88E00069D196 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A8BFF0827DA88DF0069D196 /* Twetify */;
+			targetProxy = 6A8BFF2027DA88E00069D196 /* PBXContainerItemProxy */;
+		};
+		6A8BFF2B27DA88E00069D196 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A8BFF0827DA88DF0069D196 /* Twetify */;
+			targetProxy = 6A8BFF2A27DA88E00069D196 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A8BFF1227DA88DF0069D196 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A8BFF1327DA88DF0069D196 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A8BFF1727DA88E00069D196 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A8BFF1827DA88E00069D196 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A8BFF3127DA88E00069D196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A8BFF3227DA88E00069D196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A8BFF3427DA88E00069D196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7322090A2104511E5493D142 /* Pods-Twetify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3BY87G7YJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Twetify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Albert-Tadros.Twetify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A8BFF3527DA88E00069D196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28BEB90FB567D4EC1BCBCBB8 /* Pods-Twetify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3BY87G7YJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Twetify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Albert-Tadros.Twetify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A8BFF3727DA88E00069D196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3BY87G7YJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Albert-Tadros.TwetifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twetify.app/Twetify";
+			};
+			name = Debug;
+		};
+		6A8BFF3827DA88E00069D196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3BY87G7YJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Albert-Tadros.TwetifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twetify.app/Twetify";
+			};
+			name = Release;
+		};
+		6A8BFF3A27DA88E00069D196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3BY87G7YJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Albert-Tadros.TwetifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Twetify;
+			};
+			name = Debug;
+		};
+		6A8BFF3B27DA88E00069D196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3BY87G7YJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Albert-Tadros.TwetifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Twetify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A8BFF0427DA88DF0069D196 /* Build configuration list for PBXProject "Twetify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8BFF3127DA88E00069D196 /* Debug */,
+				6A8BFF3227DA88E00069D196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8BFF3327DA88E00069D196 /* Build configuration list for PBXNativeTarget "Twetify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8BFF3427DA88E00069D196 /* Debug */,
+				6A8BFF3527DA88E00069D196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8BFF3627DA88E00069D196 /* Build configuration list for PBXNativeTarget "TwetifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8BFF3727DA88E00069D196 /* Debug */,
+				6A8BFF3827DA88E00069D196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8BFF3927DA88E00069D196 /* Build configuration list for PBXNativeTarget "TwetifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8BFF3A27DA88E00069D196 /* Debug */,
+				6A8BFF3B27DA88E00069D196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A8BFF0127DA88DF0069D196 /* Project object */;
+}
