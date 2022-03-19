@@ -24,8 +24,8 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+![twetify_part2](https://user-images.githubusercontent.com/78925894/159106236-76d9b3bd-6728-49ff-b36a-19f71f2e3158.gif)
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 # Twetify - Part I
 
