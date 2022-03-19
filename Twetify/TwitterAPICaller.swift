@@ -9,7 +9,7 @@ import UIKit
 import BDBOAuth1Manager
 
 class TwitterAPICaller: BDBOAuth1SessionManager {
-    static let client = TwitterAPICaller(baseURL: URL(string: "https://api.twitter.com"), consumerKey: "oo1dnjEDuGebDSLEIkIKsU8WR", consumerSecret: "VdpWn9NdtfF2PQt8BtzSxUxA4bKBFndfyNf8VY0MI6RiA1iNXk")
+    static let client = TwitterAPICaller(baseURL: URL(string: "https://api.twitter.com"), consumerKey: "FzxbBVekvuOFe7EnBfQbvMlsQ", consumerSecret: "n6rRUJC3fCU7ycALMJkhA1IUGC0OfbikeOMUzTmLfRy7Hh0BPl")
     var loginSuccess: (() -> ())?
     var loginFailure: ((Error) -> ())?
 
@@ -49,8 +49,7 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
     }
 
     func getDictionariesRequest(url: String, parameters: [String:Any], success: @escaping ([NSDictionary]) -> (), failure: @escaping (Error) -> ()){
-        print(parameters)
-        TwitterAPICaller.client?.get(url, parameters: parameters, progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+        TwitterAPICaller.client?.get(url, parameters: ["include_entities": true], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
             success(response as! [NSDictionary])
         }, failure: { (task: URLSessionDataTask?, error: Error) in
             failure(error)
@@ -62,6 +61,60 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
             success()
         }, failure: { (task: URLSessionDataTask?, error: Error) in
             failure(error)
+        })
+    }
+    
+    func postTweet(tweetString: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+        let url = "https://api.twitter.com/1.1/statuses/update.json"
+        print("I am inside postTweet and the tweet is ", tweetString)
+        TwitterAPICaller.client?.post(url, parameters: ["status" : tweetString], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+            print("succeded to post a tweet")
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            failure(error)
+            print("failed to post a tweet")
+        })
+    }
+    
+    func favoriteTweet (tweetId: Int, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+        let url = "https://api.twitter.com/1.1/favorites/create.json"
+        TwitterAPICaller.client?.post(url, parameters: ["id" : tweetId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+            print("succeded to like a tweet")
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            failure(error)
+            print("failed to like a tweet")
+        })
+    }
+    
+    func unfavoriteTweet(tweetId: Int, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+        let url = "https://api.twitter.com/1.1/favorites/destroy.json"
+        TwitterAPICaller.client?.post(url, parameters: ["id" : tweetId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+            print("succeded to un-like a tweet")
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            failure(error)
+            print("failed to un-like a tweet")
+        })
+    }
+    func reTweet(tweetId: Int, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+        let url = "https://api.twitter.com/1.1/statuses/retweet/\(tweetId).json"
+        TwitterAPICaller.client?.post(url, parameters: ["id" : tweetId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+            print("succeded to retweet a tweet")
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            failure(error)
+            print("failed to retweet a tweet")
+        })
+    }
+    func unReTweet(tweetId: Int, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+        let url = "https://api.twitter.com/1.1/statuses/unretweet/\(tweetId).json"
+        TwitterAPICaller.client?.post(url, parameters: ["id" : tweetId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+            print("succeded to retweet a tweet")
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            failure(error)
+            print("failed to retweet a tweet")
         })
     }
 
